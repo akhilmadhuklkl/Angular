@@ -1,0 +1,8 @@
+<!-- services - communication btw components -->
+<!-- component1(html)->component1(ts)->services->component2(ts)->component2(html) -->
+
+<div class="bg-secondary m-4 text-center"><br>
+    <h3>Sender Service</h3><br>
+<input type="text" #uname placeholder="Username"><br><br>
+<button (click)="sendData(uname.value)">Send</button>
+</div>

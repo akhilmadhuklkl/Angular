@@ -1,0 +1,11 @@
+<div class="bg-secondary m-4 text-center"><br>
+<h3>Registration</h3><br>
+<form #regForm="ngForm" (ngSubmit)="sendInput(regForm.value)">
+    <input type="text" placeholder="Name" name="name" ngModel><br>
+    <input type="email" placeholder="Email" name="email" ngModel><br>
+    <input type="password" placeholder="Password" name="password" ngModel><br>
+    <button class="btn btn-success">Register</button>
+</form>
+</div>
+
+

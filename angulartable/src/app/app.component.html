@@ -1,0 +1,31 @@
+<h1>My Custom Table</h1>
+<hr>
+
+<table class="table table-striped table-bordered">
+  <tr>
+    <!-- <th *ngFor = "let column of headers">
+      {{column}}
+    </th> -->
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Place</th>
+    <th>Image</th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <!-- <td *ngFor = "let column of headers">
+      {{row[column]}}
+    </td> -->
+    <td>{{row.ID}}</td>
+    <td>{{row.Name}}</td>
+    <td>{{row.Age}}</td>
+    <td>{{row.Gender}}</td>
+    <td>{{row.Place}}</td>
+    <td>
+      <img src="{{row.Image}}" alt="invalid" height="40px" width="40px">
+    </td>
+  </tr>
+
+</table>

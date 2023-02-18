@@ -1,0 +1,10 @@
+<div class="bg-secondary m-4 text-center"><br>
+<h3 class="text-danger">Edit Form</h3><br>
+<form #editForm="ngForm" (ngSubmit)="update(editForm.value)">
+    <input type="number" placeholder="ID" name="id" ngModel [(ngModel)]="emailObj.id"><br>
+    <input type="text" placeholder="Name" name="name" ngModel [(ngModel)]="emailObj.name"><br>
+    <input type="email" placeholder="Email" name="email" ngModel [(ngModel)]="emailObj.email"><br>
+    <input type="password" placeholder="Password" name="password" ngModel [(ngModel)]="emailObj.password"><br>
+    <button class="btn btn-success">Update</button><br><br>
+</form>
+</div>

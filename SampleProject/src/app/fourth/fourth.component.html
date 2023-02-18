@@ -1,0 +1,13 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+    <div class="bg-secondary text-white m-4 text-center"><br>
+        <h3>Template-Driven Form</h3><br>
+    <input type="text" placeholder="Username" name="username" #uname="ngModel" ngModel required minlength="5" maxlength="8" pattern="[a-zA-Z]+$"><br><br>
+    <span *ngIf="uname.invalid && uname.touched" class="text-danger">Enter Valid data</span>
+    <br><br>
+    <input type="password" placeholder="Password" name="password" #passw="ngModel" ngModel required minlength="5" maxlength="8"><br><br>
+    <span *ngIf="passw.invalid && passw.touched" class="text-danger">Enter Valid data</span>
+    <br><br>
+    <!-- <input type='email' email> -->
+    <button class="btn btn-success" [disabled]="loginForm.invalid">Login</button><br><br>
+    </div>
+</form>

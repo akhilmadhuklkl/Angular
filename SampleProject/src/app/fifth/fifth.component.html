@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <div class="bg-secondary text-white m-4 text-center"><br>
+        <h3>Reactive/Dynamic Form</h3><br>
+    <input type="text" placeholder="Username" formControlName="uname">
+    <span *ngIf="un && un.invalid && un.touched" class="text-danger">Enter Correct Data</span>
+    <br><br>
+    <input type="password" placeholder="Password" formControlName="passw">
+    <span *ngIf="ps && ps.invalid && ps.touched" class="text-danger">Enter Correct Data</span>
+    <br><br>
+    <button class="btn btn-success" [disabled]="loginForm.invalid">LOGIN</button>
+    <br><br>
+    </div>
+</form>

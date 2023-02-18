@@ -1,0 +1,9 @@
+<div class="bg-secondary m-4 text-center"><br>
+<h3>Form Sender</h3><br>
+<form #regForm="ngForm" (ngSubmit)="sendDetails(regForm.value)">
+    <input type="text" name="name" placeholder="Name" ngModel><br>
+    <input type="email" name="email" placeholder="Email" ngModel><br>
+    <input type="number" name="phonenum" placeholder="Phone Number" ngModel><br>
+    <button class="btn btn-success">Send</button>
+</form>
+</div>

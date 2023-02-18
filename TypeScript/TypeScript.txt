@@ -1,0 +1,135 @@
+// var a='Welcome to TypeScript, AKHIL'
+// console.log(a)
+
+// var a = 10
+// var b = 20
+// console.log(a+b)
+
+// var first_Name = 'akhil'
+// console.log(first_Name)
+// console.log(typeof(first_Name))
+
+// var a = 10.000
+// console.log(typeof(a))
+
+// var b = true
+// console.log(typeof(b))
+
+// var c;
+// console.log(typeof(c))
+
+//Arithmetic - +,-,*,/,++,--
+
+//Comparison - <,>,<=,>=,==,===,!=
+
+//Assignment - =,+=,-=
+
+//Logical - and,or,not
+
+//decision making - if,else,elseif,switch
+
+//loops - for,while,dowhile
+
+//functions - function FunctionName()
+// function newfn()
+// {
+//     console.log('Hello')
+// }
+// newfn()
+
+// function addfn(x,y)
+// {
+//     console.log(x+y)
+// }
+// addfn(10,45)
+
+// var a:number =10
+// var b:string ='akhil'
+// console.log(a)
+// console.log(b)
+//any
+
+// var a:any=10
+
+// var a:any='akhil'
+
+// console.log('Hello ' +a)
+
+// let a = 10
+// let b = 20
+// function check()
+// {
+//     if(a>b)
+//     {
+//         var result = 'a is greater, b is lesser'
+//     }
+//     else if (a==b)
+//     {
+//         var result = 'a & b are equal'
+//     }
+//     else
+//     {
+//         var result = 'b is greater'
+//     }
+// console.log(result)
+// }
+// check()
+
+
+//Array
+
+// let languages:string[]=['python','java','c','php']
+// console.log(languages)
+// languages[3]='cpp'
+// languages[2]='netbeans'
+// console.log(languages)
+
+
+// //Array - for loop iterate
+
+// // let languages:string[]=['python','java','cpp','netbeans','php','perl']
+// // for (let i of languages)
+// // {
+// //     console.log(i)
+// // 
+
+// //Objects
+
+// // let data = {fname:'akhil',age:11,email:'akhilm939@gmail.com'}
+// // // console.log(data)
+// // // console.log(typeof(data))
+// // // console.log(data.email)
+// // //console.log(data['email'])
+// // //Update
+// // console.log(data['email']='arun93@gmail.com')
+// // //Add
+// // console.log(data['language']='python')
+// // //Delete
+// // console.log(delete data['age'])
+// // console.log(data)
+
+
+// class Student 
+// {
+//     id:number
+//     name:string
+//     constructor(a:any,b:any)
+//     {
+//         console.log('this is a constructor')
+//         console.log(a,b)
+//     }
+//     display():void
+//     {
+//         console.log("Student ID is:"+this.id);
+//         console.log("Student Name is:"+this.name);
+//     }
+//     getdata():any
+//     {
+//         return "Welcome"
+//     }
+// }
+// let obj = new Student(10,10);
+// obj.id=101;
+// obj.name="akhil";
+// obj.display();
+// console.log(obj.getdata());

@@ -1,0 +1,29 @@
+<h3>Pipes - used to transform data to a particular format</h3>
+{{employee|json}}<br><br>
+{{employee.name|uppercase}} <br><br>
+{{employee.name|lowercase}} <br><br>
+{{employee.salary|currency}} <br><br>
+{{employee.dob|date}} <br><br>
+{{employee.name|slice:1:3}} <br><br>
+{{employee.salary|percent}} <br><br>
+
+
+<h3>Parameterized Pipes</h3>
+{{employee.salary|currency:'EUR'}} <br><br>
+{{employee.salary|currency:'INR'}} <br><br>
+{{employee.salary|currency:'INR':'code'}} <br><br>
+{{employee.salary|currency:'OMR'}} <br><br>
+{{employee.dob|date:'MMMM-dd-YYYY'}} <br><br>
+{{employee.dob|date:'MM-dd-YY'}} <br><br>
+
+<h3 class="text-danger">Chaining Pipes</h3>
+{{employee.dob|date:'MMMM-dd-YYYY'|uppercase}} <br><br>
+
+<h3 class="text-danger">Custom Pipes</h3>
+{{employee.name|samplepipe:employee.name}}<br><br>
+
+
+<!--create new pipe-->
+<!-- name->pass-> first letter should be capital letters -->
+
+{{employee.name|newpipe:employee.name|titlecase}}

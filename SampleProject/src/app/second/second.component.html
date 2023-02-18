@@ -1,0 +1,81 @@
+<p>second works!</p>
+<h3 class="text-danger">Structural Directives</h3><br>
+<h4 class="text-success">ngIf</h4>
+<div *ngIf="data">
+    <h3>Condition Satisfied!!!</h3>
+</div>
+
+First <input type="checkbox" [(ngModel)]="select1">
+Second <input type="checkbox" [(ngModel)]="select2">
+Third <input type="checkbox" [(ngModel)]="select3">
+<div *ngIf="select1 && select2 && select3">
+    <h3>All Checkboxes are Selected!!!!</h3>
+</div>
+<br>
+
+<h4 class="text-primary">else</h4>
+<div *ngIf="a==5 && b==20 else notsatisfied">
+    <h5>Condition Satisfied</h5>
+</div>
+<!-- <p #notsatisfied>Not Satisfied</p> -->
+<ng-template #notsatisfied>Not Satisfied</ng-template><br><br>
+
+<h4 class="text-primary">then</h4>
+<div *ngIf="a==5 && b==20 else notsatisfied then satisfied">
+    <!-- <h5>Condition Satisfied</h5> -->
+</div>
+<!-- <p #notsatisfied>Not Satisfied</p> -->
+<ng-template #notsatisfied>Not Satisfied</ng-template>
+<ng-template #satisfied>Condition satisfied</ng-template>
+
+<!-- Text Box - increment/decrement (two way binding) -->
+
+
+<h4 class="text-primary">For</h4>
+<ul *ngIf="hideData">
+<li *ngFor="let x of person;index as i;odd as o;even as e;first as f;last as l;">
+    {{i}}
+    {{x.name}}
+    {{x.age}}
+    {{x.email}}
+    {{o}}
+    {{e}}
+    {{f}}
+    {{l}}
+</li>
+</ul>
+<button (click)="hideList()" class="btn btn-info">hideData</button>
+<!-- <h4 class="text-primary">For Table</h4> -->
+
+<h4 class="text-primary">switch</h4>
+<div [ngSwitch]="s">
+    <div *ngSwitchCase = 1>Addition</div>
+    <div *ngSwitchCase = 2>Subtraction</div>
+    <div *ngSwitchCase = 3>Multiplication</div>
+    <div *ngSwitchCase = 4>Division</div>
+</div>
+
+{{day}}
+<div [ngSwitch]="day">
+    <div *ngSwitchCase = 0>Sunday</div>
+    <div *ngSwitchCase = 1>Monday</div>
+    <div *ngSwitchCase = 2>Tuesday</div>
+    <div *ngSwitchCase = 3>Wednesday</div>
+    <div *ngSwitchCase = 4>Thursday</div>
+    <div *ngSwitchCase = 5>Friday</div>
+    <div *ngSwitchCase = 6>Saturday</div>
+</div>
+
+<h3 class="text-danger">Attribute Directives</h3>
+<h4 class="text-primary">ngClass - connecting html and css</h4>
+<div ngClass="style1">This is attribute directive</div>
+
+<h4 class="text-primary">ngClass - connecting html,ts and css</h4>
+<div [ngClass]="tsstyle1">This is attribute directive</div>
+
+<h4 class="text-primary">ngClass - multiple classes</h4>
+<div [ngClass]="['style1','style2']">This is attribute directive</div>
+<div [ngClass]="[tsstyle1,tsstyle2]">This is ts attribute directive</div>
+
+<h4 class="text-primary">ngStyle</h4>
+<div [ngStyle]="{'background-color':newstyle,'color':'white'}">This is a attribute directive</div>
